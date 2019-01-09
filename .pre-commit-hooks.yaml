@@ -1,0 +1,8 @@
+- id: terraform-fmt
+  name: Run 'terraform fmt'
+  description: Rewrites all Terraform configuration files to a canonical format.
+  entry: terraform fmt
+  args: ['-write=true']
+  pass_filenames: false
+  language: system
+  types: [file, terraform]
